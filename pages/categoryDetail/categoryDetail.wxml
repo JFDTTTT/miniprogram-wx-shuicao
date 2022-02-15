@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view>
+  <component-search></component-search>
+  <component-list list="{{list}}"></component-list>
+</view>

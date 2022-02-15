@@ -1,0 +1,74 @@
+<!--pages/detail/detail.wxml-->
+<view wx:if="detail">
+  <image class="main-image" mode='widthFix' src="{{detail.bgPicture}}"></image>
+  <view bindtap="clickBack" class="back">
+    <image src="../../images/back-white.png"></image>
+  </view>
+  <view class="main-head">
+    <view class="head-top">
+      <text class="head-top-left">{{detail.name}}</text>
+      <text class="head-top-right">分享次数：{{detail.shardNum}}次</text>
+    </view>
+    <view class="head-bottom">拉丁名称：{{detail.latinName}}</view>
+  </view>
+
+  <view class="block">
+    <view class="block-head">{{detail.categoryName}}</view>
+    <view class="block-body">{{detail.topCategory}} {{detail.secondaryCategory}}</view>
+  </view>
+
+  <view class="block">
+    <view class="block-head">简介</view>
+    <view class="block-body">{{detail.description}}</view>
+  </view>
+
+</view>
+
+<view class="block">
+  <view class="block-head block-flex">
+    <view>图集</view>
+    <view wx:if="{{detail.pictures.length > 3}}" class="pic-more block-flex">
+      <text bindtap="toImageList">查看更多</text>
+      <image class="pic-more-icon" src="/images/arrows-right.png"></image>
+    </view>
+  </view>
+  <view class="image-cell">
+    <image class="image-cell-item" bindtap="preview" data-src="{{item}}"  mode="aspectFill" wx:for="{{detail.pictures}}" wx:if="{{index < 3}}" src="{{item}}">
+    </image>
+    <view wx:if="{{detail.pictures.length > 3}}"  bindtap="toImageList" class="image-cell-num block-flex">
+      <text>{{detail.pictures.length}}</text>
+      <image class="image-cell-icon" src="/images/arrows-right-round.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="block">
+  <view class="block-head">种植条件</view>
+  <view class="block-plant block-flex">
+    <view class="plant-left">
+      <view class="plant-title plant-title_left">种植温度</view>
+      <view class="pant-content">
+        <image src="/images/temperature-icon.png" alt="" srcset=""></image>
+        <text>{{detail.temperature}}℃</text>
+      </view>
+    </view>
+    <view class="plant-right">
+      <view class="plant-title plant-title_right">水质需求</view>
+      <view class="pant-content">
+        <image src="/images/light-icon.png" alt="" srcset=""></image>
+        <text>{{detail.lightingTime}}dh</text>
+      </view>
+    </view>
+  </view>
+  <view class="block-body">*光照 {{detail.lightingStrength === '1' ? '喜强光' : '不喜强光'}}</view>
+</view>
+
+<view class="block">
+  <view class="block-head">繁殖</view>
+  <view class="block-body">{{detail.breed}}</view>
+</view>
+
+<view class="block">
+  <view class="block-head">声明</view>
+  <view class="block-body">本平台是一个由水族爱好者共建的分享交流平台,任何图片、视频、文字内容均由用户提供,并为大家提供免费查阅。</view>
+</view>

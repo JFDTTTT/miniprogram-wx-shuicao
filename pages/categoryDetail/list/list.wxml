@@ -1,0 +1,4 @@
+<!--pages/index/list/list.wxml-->
+<view class="home-list">
+  <plant-card wx:for="{{list}}" detail="{{item}}" wx:key="index"></plant-card>
+</view>

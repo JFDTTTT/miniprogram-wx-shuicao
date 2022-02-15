@@ -1,0 +1,25 @@
+<!--pages/search/head/head.wxml-->
+<view class="search-head-con">
+  <view class="search-head">
+    <view class="search-content">
+      <icon class="search-icon" type="search" size="24" color="#AAAAAA"></icon>
+      <input class="search-input" bindblur="onBindblur" bindtap="onBindfocus" bindinput='getInputValue' value="{{value}}" auto-focus 	confirm-type="search" placeholder="快速搜索水草"/>
+      <icon class="close-icon" type="cancel" size="20" color="#AAAAAA"></icon>
+    </view>
+    <text class="search-botton" bindtap="searchHandler">搜索</text>
+  </view>
+  <view wx:if="{{showSearchBody}}"  class="search-body">
+    <view wx:if="{{historyList.length}}" class="search-history">
+      <view class="history-head">历史搜索</view>
+      <view class="history-body">
+        <view wx:for="{{historyList}}" wx:key="index" bindtap="searchHandler" data-key="{{item}}"  class="history-item">{{item}}</view>
+      </view>
+    </view>
+    <view wx:if="{{relatedList.length}}" class="search-recommend">
+      <view wx:for="{{relatedList}}" wx:key="index" bindtap="searchHandler" data-key="{{item.name}}" class="recommend-item">
+        <icon class="recommend-icon" type="search" size="24" color="#AAAAAA"></icon>
+        <text class="recommend-text">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

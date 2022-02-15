@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "category-card": "/components/category-card/category-card"
+  }
+}

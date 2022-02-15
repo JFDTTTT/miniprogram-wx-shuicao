@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "plant-card": "/components/plant-card/plant-card"
+  }
+}

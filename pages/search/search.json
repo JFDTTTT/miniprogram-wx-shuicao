@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "component-head": "/pages/search/head/head",
+    "category-card": "/components/category-card/category-card",
+    "plant-card": "/components/plant-card/plant-card"
+
+  },
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "搜索"
+}

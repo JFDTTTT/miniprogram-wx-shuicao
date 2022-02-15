@@ -1,0 +1,9 @@
+/* pages/search/search.wxss */
+.search-res{
+  position: relative;
+  padding: 24rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

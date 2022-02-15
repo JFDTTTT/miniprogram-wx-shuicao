@@ -1,0 +1,16 @@
+/* pages/detailPicList/detailPicList.wxss */
+.image-list{
+  padding: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-list image {
+  display: block;
+  width: 344rpx;
+  height: 344rpx;
+  margin-top: 16rpx;
+  border-radius: 8rpx;
+}

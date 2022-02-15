@@ -1,0 +1,4 @@
+<!--pages/detailPicList/detailPicList.wxml-->
+<view wx:if="{{list}}" class="image-list">
+  <image bindtap="preview" data-src="{{item}}" wx:for="{{list}}" mode="aspectFill" src="{{item}}"></image>
+</view>

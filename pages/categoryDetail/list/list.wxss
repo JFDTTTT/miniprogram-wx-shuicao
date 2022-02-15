@@ -1,0 +1,12 @@
+/* pages/index/list/list.wxss */
+.home-list {
+  position: relative;
+  margin-top: -24rpx;
+  padding: 24rpx 24rpx 0;
+  overflow: hidden;
+  border-radius: 24rpx 24rpx 0 0;
+  background-color: #F6F8FB;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

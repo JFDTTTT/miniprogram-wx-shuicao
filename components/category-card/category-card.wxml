@@ -1,0 +1,11 @@
+<!--pages/index/list/list-item/list-item.wxml-->
+<view class="list-item" bindtap="onClick" data-id="{{detail.id}}">
+  <view class="item-image-container">
+    <image class="item-image" mode="aspectFill" src="{{detail.picture}}"></image>
+    <view class="item-image-num">品种 {{detail.plantCount}}</view>
+  </view>
+  <view class="item-bottom">
+    <view class="item-name">{{detail.name}}</view>
+    <view class="item-name-english">{{detail.latinName}}</view>
+  </view>
+</view>

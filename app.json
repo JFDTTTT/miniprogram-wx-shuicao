@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/categoryDetail/categoryDetail",
+    "pages/search/search",
+    "pages/logs/logs",
+    "pages/test/index",
+    "pages/detail/detail",
+    "pages/detailPicList/detailPicList"
+  ],
+  "window": {
+    "navigationBarTitleText": "水草图鉴"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

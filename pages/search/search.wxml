@@ -1,0 +1,9 @@
+<!--pages/search/search.wxml-->
+<component-head bind:searchEvent="onSearch"></component-head>
+<!-- {{searchList}} -->
+<view class="search-res">
+  <block wx:for="{{searchList}}">
+    <category-card wx:if="{{item.type === 1}}" detail="{{item}}"></category-card>
+    <plant-card wx:if="{{item.type === 2}}" detail="{{item}}"></plant-card>
+  </block>
+</view>

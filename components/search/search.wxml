@@ -1,0 +1,7 @@
+<!--components/search/search.wxml-->
+<view class="search-container">
+  <view class="search-input" bindtap="toSearch">
+    <icon class="search-icon" type="search" color="#AAAAAA"></icon>
+    <text class="search-text">快速搜索水草</text>
+  </view>
+</view>

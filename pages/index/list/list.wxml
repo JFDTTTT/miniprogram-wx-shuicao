@@ -1,0 +1,4 @@
+<!--pages/index/list/list.wxml-->
+<view class="home-list">
+  <category-card wx:for="{{list}}" detail="{{item}}" wx:key="index"></category-card>
+</view>

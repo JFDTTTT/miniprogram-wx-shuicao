@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "component-search": "/components/search/search",
+    "component-list":"/pages/categoryDetail/list/list"
+  },
+  "navigationBarBackgroundColor": "#33B779",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}
