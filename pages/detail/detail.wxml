@@ -53,10 +53,10 @@
       </view>
     </view>
     <view class="plant-right">
-      <view class="plant-title plant-title_right">水质需求</view>
+      <view class="plant-title plant-title_right">水质硬度</view>
       <view class="pant-content">
-        <image src="/images/light-icon.png" alt="" srcset=""></image>
-        <text>{{detail.lightingTime}}dh</text>
+        <image src="/images/quality-icon.png" alt="" srcset=""></image>
+        <text>{{detail.lightingTime}}DH</text>
       </view>
     </view>
   </view>

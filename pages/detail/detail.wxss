@@ -144,7 +144,7 @@
 }
 
 .plant-right{
-  background-color: #FEF6D1;
+  background-color: #ECF4FF
 }
 
 .plant-title{
@@ -157,7 +157,7 @@
   color: #A2C0AF;
 }
 .plant-title_right{
-  color: #A89342;
+  color: #7B90E1 
 }
 
 .pant-content{
@@ -183,5 +183,5 @@
 }
 
 .plant-right text {
-  color: #A89342;
+  color: #7B90E1 
 }

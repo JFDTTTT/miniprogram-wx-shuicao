@@ -27,7 +27,7 @@
         {
           "name": "pages/detail/detail",
           "pathName": "pages/detail/detail",
-          "query": "id=2",
+          "query": "id=9",
           "scene": null
         },
         {
