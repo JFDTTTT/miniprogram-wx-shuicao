@@ -2,13 +2,15 @@ const {
   miniProgram
 } = wx.getAccountInfoSync();
 
-const hosts = {
+const host = 'https://www.shuicaotujian.com'
+
+const env = {
   // 开发版本
-  'develop': 'https://www.shuicaotujian.com',
+  'develop': '/prod-api',
   // 体验版本
-  'trial': 'https://www.shuicaotujian.com',
-  // 整事版本
-  'release': 'https://www.shuicaotujian.com',
+  'trial': '/prod-api',
+  // 正式版本
+  'release': '/prod-api',
 }
 
 function request(url, data = {}, method = "GET") {
@@ -17,7 +19,7 @@ function request(url, data = {}, method = "GET") {
       title: '加载中',
     })
     wx.request({
-      url: hosts[miniProgram.envVersion] + url,
+      url: host + env[miniProgram.envVersion] + url,
       data: data,
       method: method,
       header: {
