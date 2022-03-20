@@ -71,7 +71,14 @@ Page({
   },
   onShareTimeline(){},
   clickBack(){
-    wx.navigateBack()
+    const current  = getCurrentPages()
+    if (current.length === 1) {
+      wx.redirectTo({
+        url: '/pages/index/index',
+      })
+    } else {
+      wx.navigateBack()
+    }
   },
   toImageList(event){
     wx.navigateTo({
