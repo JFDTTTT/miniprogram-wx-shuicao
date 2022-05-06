@@ -19,7 +19,9 @@
 
   <view class="block">
     <view class="block-head">简介</view>
-    <view class="block-body">{{detail.description}}</view>
+    <view class="block-body">
+      <text space="ensp" decode="{{true}}" >{{detail.description}}</text>
+    </view>
   </view>
 
 </view>
@@ -64,8 +66,10 @@
 </view>
 
 <view class="block">
-  <view class="block-head">繁殖</view>
-  <view class="block-body">{{detail.breed}}</view>
+  <view class="block-head">栽培与繁殖</view>
+  <view class="block-body">
+    <text space="ensp" decode="{{true}}" >{{detail.breed}}</text>
+  </view>
 </view>
 
 <view class="block">
